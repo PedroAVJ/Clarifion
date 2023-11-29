@@ -1,3 +1,3 @@
-Layout
+Full recheck
 Responsive Design
-That bar at the bottom
+Refactor
