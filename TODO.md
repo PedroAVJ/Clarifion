@@ -1,3 +1,1 @@
-Layout
-Refactor
 Responsive Design
