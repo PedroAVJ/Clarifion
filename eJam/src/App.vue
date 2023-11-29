@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import HeaderItems from './components/HeaderItems.vue'
 import TitleItems from './components/TitleItems.vue'
+import ReviewDiv from './components/ReviewDiv.vue'
 import FooterItems from './components/FooterItems.vue'
 
 // SVG's
-import StarsIcon from '@/assets/svg/stars/five-stars.svg'
-import VerifiedIcon from '@/assets/svg/checkmarks/verified.svg'
 import FatStarIcon from '@/assets/svg/stars/fat.svg'
 import CheckedIcon from '@/assets/svg/checked.svg'
 import BlueMarkIcon from '@/assets/svg/checkmarks/blue.svg'
@@ -25,7 +24,6 @@ import VisaIcon from '@/assets/svg/cards/visa.svg'
 // Images
 import clarifionDescription from '@/assets/images/clarifion-description.png'
 import clarifionProduct from '@/assets/images/clarifion-product.png'
-import profilePicture from '@/assets/images/profile-pic.png'
 import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
 </script>
 
@@ -34,40 +32,20 @@ import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
     <HeaderItems />
     <TitleItems />
 
-    <!--Posting-->
-    <main class="flex flex-row justify-between mx-40 my-20">
+    <main class="flex flex-row justify-between w-5/6 mx-auto mb-16 p-10 space-x-10">
       <!--Left-->
-      <div class="flex flex-col items-center w-1/2">
-        <img :src="clarifionDescription" alt="clarifion description" class="w-5/6 h-5/6" />
-
-        <!--Review-->
-        <div class="flex flex-col w-5/6 mt-10 p-5 space-y-5">
-          <div class="self-start flex items-center space-x-2">
-            <img :src="profilePicture" alt="profile picture" class="rounded-full w-12 h-12" />
-            <div class="flex flex-col space-y-2">
-              <StarsIcon />
-              <div class="flex space-x-2">
-                <span class="font-bold text-sm text-[#333333]">Ken T.</span>
-                <VerifiedIcon />
-                <span class="font-normal text-sm text-[#5BB59A]"
-                  >Verified Customer</span
-                >
-              </div>
-            </div>
-          </div>
-          <div>
-            <span class="font-normal text-base text-[#4D5254]"
-              >“As soon as the Clarifions arrived I put one in my bedroom. This was late in the
-              afternoon. When I went to the bedroom in the evening it smelled clean. When I went
-              to bed I felt I could breathe better. Wonderful.”</span
-            >
-          </div>
-        </div>
+      <div class="flex flex-col w-1/2 space-y-6">
+        <img
+          :src="clarifionDescription"
+          alt="clarifion description"
+          class="w-auto h-auto rounded-lg"
+        />
+        <ReviewDiv />
       </div>
 
       <!--Right-->
-      <div class="flex flex-col items-start w-1/2 space-y-6">
-        <div class="text-4xl w-4/5">
+      <div class="flex flex-col w-1/2 space-y-8">
+        <div class="text-4xl">
           <span class="text-[#2C7EF8]">ONE TIME ONLY</span>
           <span> Special Price For 6 Extra Clarifion For Only </span>
           <span class="text-[#2C7EF8]">$14 Each</span>
@@ -75,29 +53,29 @@ import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
         </div>
 
         <!--Info-->
-        <div class="flex w-full h-32 space-x-4">
+        <div class="flex flex-row space-x-6 w-full">
           <img
             :src="clarifionProduct"
             alt="clarifion product"
-            class="bg-[#2C7EF8] w-32 h-32 rounded-lg"
+            class="bg-[#2C7EF8] w-40 h-40 rounded-lg"
           />
-          <div class="flex flex-col w-3/4 space-y-2">
-            <div class="flex justify-between">
+          <div class="flex flex-col w-3/4 space-y-3.5">
+            <div class="flex flex-row justify-between">
               <span class="font-normal text-xl">Clarifion Air Ionizer</span>
-              <div class="flex justify-between space-x-2 font-semibold">
+              <div class="flex flex-row justify-between space-x-2.5 font-semibold">
                 <div class="text-[#969696] text-base line-through">$180</div>
                 <div class="text-[#2C7EF8] text-2xl">$84</div>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex flex-row">
               <FatStarIcon />
               <FatStarIcon />
               <FatStarIcon />
               <FatStarIcon />
               <FatStarIcon />
             </div>
-            <div class="flex">
-              <CheckedIcon class="mr-4" />
+            <div class="flex flex-row space-x-4 items-center">
+              <CheckedIcon />
               <div class="font-light text-base text-[#37465A]">12 left in Stock</div>
             </div>
             <div class="font-normal text-base text-[#4D5254]">
@@ -107,31 +85,31 @@ import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
           </div>
         </div>
 
-        <div class="flex space-x-4">
-          <BlueMarkIcon />
-          <div class="text-base text-[#4D5254]">
-            <span class="font-normal">Negative Ion Technology may </span>
-            <span class="font-bold">help with allergens</span>
+        <div class="flex flex-col space-y-4">
+          <div class="flex flex-row space-x-3">
+            <BlueMarkIcon />
+            <div class="text-base text-[#4D5254]">
+              <span class="font-normal">Negative Ion Technology may </span>
+              <span class="font-bold">help with allergens</span>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-3">
+            <BlueMarkIcon />
+            <div class="text-base text-[#4D5254]">
+              <span class="font-normal">Designed for </span>
+              <span class="font-bold">air rejuvenation</span>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-3">
+            <BlueMarkIcon />
+            <div class="text-base text-[#4D5254]">
+              <span class="font-bold">Perfect for every room</span>
+              <span class="font-normal"> in all types of places.</span>
+            </div>
           </div>
         </div>
 
-        <div class="flex space-x-4">
-          <BlueMarkIcon />
-          <div class="text-base text-[#4D5254]">
-            <span class="font-normal">Designed for </span>
-            <span class="font-bold">air rejuvenation</span>
-          </div>
-        </div>
-
-        <div class="flex space-x-4">
-          <BlueMarkIcon />
-          <div class="text-base text-[#4D5254]">
-            <span class="font-bold">Perfect for every room</span>
-            <span class="font-normal"> in all types of places.</span>
-          </div>
-        </div>
-
-        <div class="flex bg-[#EDF3FD] p-4 rounded-lg w-full items-center space-x-4">
+        <div class="flex flex-row bg-[#EDF3FD] py-3 px-4 rounded-lg items-center space-x-4">
           <ModuloIcon />
           <div class="text-base font-normal">
             <span>Save </span>
@@ -143,39 +121,43 @@ import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
           </div>
         </div>
 
-        <div
-          class="flex justify-center items-center bg-[#59AE43] rounded-full text-white font-bold text-xl w-full py-4 space-x-5"
-        >
-          <span>YES - CLAIM MY DISCOUNT</span>
-          <ArrowIcon />
-        </div>
-
-        <div
-          class="flex w-full justify-between items-center font-normal text-xs border border-[#CFCFCF] rounded py-2 px-4"
-        >
-          <div class="pr-6">Free shipping</div>
-          <div class="flex items-center border-x-[1px] border-x-[#CFCFCF] px-6">
-            <GreyLockIcon />
-            <span> Secure 256-bit SSL encryption. </span>
+        <div class="flex flex-col">
+          <div
+            class="flex flex-row justify-center items-center bg-[#59AE43] rounded-full text-white font-bold text-xl py-4 space-x-5"
+          >
+            <span>YES - CLAIM MY DISCOUNT</span>
+            <ArrowIcon />
           </div>
-          <div class="flex justify-center pl-6">
-            <VisaIcon />
-            <ShopPayIcon />
-            <PayPalIcon />
-            <MastercardIcon />
-            <GooglePayIcon />
-            <ApplePayIcon />
-            <AmericanExpressIcon />
+  
+          <div
+            class="flex flex-row justify-between items-center font-normal text-xs border border-[#CFCFCF] rounded py-2 px-4 space-x-4 mt-3 mb-5"
+          >
+            <div>Free shipping</div>
+            <div class="border-r-[1px] border-x-[#CFCFCF] h-full"></div>
+            <div class="flex flex-row space-x-2.5">
+              <GreyLockIcon />
+              <div> Secure 256-bit SSL encryption. </div>
+            </div>
+            <div class="border-r-[1px] border-x-[#CFCFCF] h-full"></div>
+            <div class="flex flex-row justify-between">
+              <VisaIcon />
+              <ShopPayIcon />
+              <PayPalIcon />
+              <MastercardIcon />
+              <GooglePayIcon />
+              <ApplePayIcon />
+              <AmericanExpressIcon />
+            </div>
+          </div>
+  
+          <div
+            class="flex flex-row justify-center items-center text-[#F82C2C] font-medium text-lg underline"
+          >
+            <span>NO THANKS, I DON'T WANT THIS</span>
           </div>
         </div>
 
-        <div
-          class="flex justify-center items-center text-[#F82C2C] font-medium text-lg w-full underline"
-        >
-          <span>NO THANKS, I DON'T WANT THIS</span>
-        </div>
-
-        <div class="flex w-full">
+        <div class="flex flex-row space-x-4 items-center">
           <img :src="GuaranteeSeal" alt="guarantee seal" class="w-1/5" />
           <div class="w-4/5 text-base text-[#4D5254]">
             <span class="font-normal"
@@ -183,8 +165,8 @@ import GuaranteeSeal from '@/assets/images/guarantee-seal.png'
             </span>
             <span class="font-bold"> 30 day satisfaction guarantee </span>
             <span class="font-normal"
-              >. Please refer to our return policy at the bottom of the page for more details.
-              Happy Shopping!</span
+              >. Please refer to our return policy at the bottom of the page for more details. Happy
+              Shopping!</span
             >
           </div>
         </div>

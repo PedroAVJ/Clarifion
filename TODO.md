@@ -1,3 +1,3 @@
-Full recheck
-Responsive Design
+Layout
 Refactor
+Responsive Design
