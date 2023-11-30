@@ -32,8 +32,8 @@ import clarifionProduct from '@/assets/images/clarifion-product.png'
           <div class="font-light text-xs md:text-base text-[#37465A]">12 left in Stock</div>
         </div>
         <div class="font-normal text-base text-[#4D5254] hidden md:block">
-          Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers
-          with a simple.
+          Simply plug a Clarifion into any standard outlet and replace bulky, expensive air
+          purifiers with a simple.
         </div>
       </div>
     </div>

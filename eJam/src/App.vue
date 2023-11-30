@@ -20,7 +20,9 @@ import FooterItems from './components/FooterItems.vue'
     <MainTitle />
     <TitleSteps />
 
-    <main class="flex flex-row justify-between md:w-5/6 w-11/12 mx-auto mb-16 md:p-10 md:space-x-10">
+    <main
+      class="flex flex-row justify-between md:w-5/6 w-11/12 mx-auto mb-16 md:p-10 md:space-x-10"
+    >
       <LeftSide class="hidden md:block" />
       <div class="flex flex-col md:w-1/2 w-full space-y-8 justify-center">
         <DescriptionText />

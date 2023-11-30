@@ -5,11 +5,7 @@ import clarifionDescription from '@/assets/images/clarifion-description.png'
 
 <template>
   <div class="flex flex-col w-1/2 space-y-6">
-        <img
-          :src="clarifionDescription"
-          alt="clarifion description"
-          class="w-auto h-auto rounded-lg"
-        />
-        <ReviewDiv />
-      </div>
+    <img :src="clarifionDescription" alt="clarifion description" class="w-auto h-auto rounded-lg" />
+    <ReviewDiv />
+  </div>
 </template>

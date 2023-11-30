@@ -6,6 +6,7 @@ import createSvgIconsPlugin from 'vite-svg-loader';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Clarifion/',
   plugins: [
     vue(),
     createSvgIconsPlugin(),
