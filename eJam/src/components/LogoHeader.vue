@@ -6,10 +6,10 @@ import clarifionLogo from '@/assets/images/clarifion-logo.png'
 
 <template>
   <div class="flex flex-row justify-between w-5/6 mx-auto my-8">
-    <img :src="clarifionLogo" alt="clarifion-logo" class="w-48 h-9" />
+    <img :src="clarifionLogo" alt="clarifion-logo" class="md:w-48 md:h-9 w-28 h-5" />
     <div class="flex flex-row items-center space-x-8">
-      <McAfeeIcon class="w-20 h-8" />
-      <NortonIcon class="w-20 h-8" />
+      <McAfeeIcon class="md:w-20 md:h-8 w-11 h-4" />
+      <NortonIcon class="md:w-20 md:h-8 w-11 h-4" />
     </div>
   </div>
 </template>

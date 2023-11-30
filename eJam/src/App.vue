@@ -17,14 +17,12 @@ import FooterItems from './components/FooterItems.vue'
   <div class="flex flex-col items-center font-manrope">
     <HeaderItems />
     <LogoHeader />
-    <TitleSteps />
     <MainTitle />
+    <TitleSteps />
 
-    <main class="flex flex-row justify-between w-5/6 mx-auto mb-16 p-10 space-x-10">
-      <LeftSide />
-
-      <!--Right-->
-      <div class="flex flex-col w-1/2 space-y-8">
+    <main class="flex flex-row justify-between md:w-5/6 w-11/12 mx-auto mb-16 md:p-10 md:space-x-10">
+      <LeftSide class="hidden md:block" />
+      <div class="flex flex-col md:w-1/2 w-full space-y-8 justify-center">
         <DescriptionText />
         <MainDescription />
         <BulletPoints />
